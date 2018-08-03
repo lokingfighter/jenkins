@@ -11,7 +11,7 @@ pipeline {
     
 	post {
 	  always {
-	     archiveArtifacts 'dist/*.jar'
+	     archiveArtifacts '/var/lib/jenkins/jobs/Pipeline\ project'
         }
     }
 }
