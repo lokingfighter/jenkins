@@ -8,10 +8,4 @@ pipeline {
             }
         }
    }
-    
-	post {
-	  always {
-	     archiveArtifacts '/var/lib/jenkins/jobs/Pipeline project/9'
-        }
-    }
 }
