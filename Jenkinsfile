@@ -11,7 +11,7 @@ pipeline {
     
 	post {
 	  always {
-	     archiveArtifacts '/var/lib/jenkins/jobs/Pipeline\ project'
+	     archiveArtifacts '/var/lib/jenkins/jobs/Pipeline \ project'
         }
     }
 }
