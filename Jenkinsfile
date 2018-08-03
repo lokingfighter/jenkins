@@ -7,5 +7,11 @@ pipeline {
 		sh 'docker run hello-world'
             }
         }
+   }
+    
+	post {
+	  always {
+	     archive 'dist/*.jar'
+        }
     }
 }
