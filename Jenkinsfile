@@ -1,11 +1,15 @@
-pipeline {
+Pipeline {
     agent any
-    stages {
+      stages {
         stage('build') {
-            steps {
-                sh 'ant -f build.xml -v'
-		sh 'docker run hello-world'
-            }
+          steps {
+            sh 'java -version'
+          }
         }
-   }
+        stage('test') {
+          steps {
+            echo 'testing...'
+          }
+        }
+      }
 }
